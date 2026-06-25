@@ -220,3 +220,29 @@ if st.button("Generate Travel Plan"):
             st.info(
                 "No trips generated yet."
             )
+        # Analytics Dashboard
+
+        st.subheader("📊 Travel Analytics")
+
+        if not history.empty:
+
+            st.metric(
+                "Total Trips Generated",
+                len(history)
+            )
+
+            st.subheader(
+                "💰 Budget Analysis Chart"
+            )
+
+            st.bar_chart(
+                history["budget"]
+            )
+
+            st.subheader(
+                "🌍 Most Visited Destinations"
+            )
+
+            st.bar_chart(
+                history["destination"].value_counts()
+            )
