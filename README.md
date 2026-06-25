@@ -269,18 +269,6 @@ reportlab
 * AI Cost Optimization
 * Travel Recommendation Engine using Machine Learning
 
----
-
-## 👨‍💻 Author
-
-### Srikanth
-
-AI Powered Travel Planner – Hackathon Project
-
-GitHub:
-https://github.com/srikanthcap
-
----
 
 ## ⭐ Support
 
