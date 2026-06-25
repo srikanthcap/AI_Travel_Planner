@@ -17,9 +17,40 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+.stMetric {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🌍 AI Powered Travel Planner")
 
+st.markdown("""
+### ✈️ Plan Smarter, Travel Better
+
+Get AI-powered itineraries, weather forecasts,
+budget insights and travel recommendations.
+""")
+
 create_table()
+col1, col2, col3, col4 = st.columns(4)
+
+col1.metric("🌍 Destinations", "100+")
+col2.metric("🤖 AI Powered", "Gemini")
+col3.metric("📄 PDF Reports", "Available")
+col4.metric("🌤 Live Weather", "Enabled")
+
+st.image(
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    use_container_width=True
+)
 
 # User Inputs
 
