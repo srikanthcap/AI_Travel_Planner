@@ -10,6 +10,7 @@ genai.configure(
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
+
 def generate_itinerary(
     source,
     destination,
@@ -17,6 +18,7 @@ def generate_itinerary(
     budget,
     interests
 ):
+
     prompt = f"""
 Create a complete travel itinerary.
 
@@ -33,9 +35,10 @@ Include:
 2. Top attractions
 
 3. Recommended hotels
-   - Budget Hotel
-   - Mid-range Hotel
-   - Luxury Hotel
+   - 3 Budget Hotels
+   - 3 Mid-range Hotels
+   - 3 Luxury Hotels
+   Mention approximate price per night.
 
 4. Local cuisine
 
@@ -46,6 +49,34 @@ Include:
 7. Estimated total cost
 
 8. Travel tips
+"""
+
+    response = model.generate_content(prompt)
+
+    return response.text
+
+
+def generate_hotel_recommendations(
+    destination,
+    budget
+):
+
+    prompt = f"""
+Recommend hotels in {destination}.
+
+Budget: ₹{budget}
+
+Provide:
+
+1. Budget Hotels (3)
+2. Mid-range Hotels (3)
+3. Luxury Hotels (3)
+
+For each hotel mention:
+- Hotel Name
+- Approximate Price Per Night
+- Rating (Approximate)
+- Short Description
 """
 
     response = model.generate_content(prompt)

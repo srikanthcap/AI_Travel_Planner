@@ -1,0 +1,30 @@
+source,destination,mode,provider,cost,duration
+Chennai,Goa,Flight,IndiGo,5500,2h
+Chennai,Goa,Train,Konkan Express,1200,18h
+Chennai,Goa,Bus,RedBus,1800,14h
+Chennai,Delhi,Flight,Air India,6500,3h
+Chennai,Delhi,Train,Rajdhani,1800,28h
+Chennai,Delhi,Bus,Volvo Travels,2500,35h
+Chennai,Mumbai,Flight,Vistara,4500,2h
+Chennai,Mumbai,Train,Mumbai Express,1500,22h
+Chennai,Mumbai,Bus,SRS Travels,2200,24h
+Mumbai,Goa,Flight,SpiceJet,3500,1h
+Mumbai,Goa,Train,Jan Shatabdi,800,10h
+Mumbai,Goa,Bus,VRL Travels,1200,12h
+Mumbai,Delhi,Flight,IndiGo,4000,2h
+Mumbai,Delhi,Train,Duronto Express,1300,16h
+Mumbai,Delhi,Bus,Orange Travels,2200,20h
+Bangalore,Goa,Flight,Air India,3000,1h
+Bangalore,Goa,Train,Goa Express,900,12h
+Bangalore,Goa,Bus,KSRTC,1000,10h
+Bangalore,Delhi,Flight,IndiGo,5000,3h
+Bangalore,Delhi,Train,Karnataka Express,1700,34h
+Bangalore,Delhi,Bus,Volvo Travels,2800,36h
+Hyderabad,Goa,Flight,SpiceJet,3200,1.5h
+Hyderabad,Goa,Train,Goa Express,1000,15h
+Hyderabad,Goa,Bus,RedBus,1400,13h
+Hyderabad,Delhi,Flight,Air India,4800,2.5h
+Hyderabad,Delhi,Train,Telangana Express,1500,24h
+Delhi,Goa,Flight,Vistara,5500,2.5h
+Delhi,Goa,Train,Goa Sampark Kranti,1800,30h
+Delhi,Goa,Bus,Orange Travels,3000,32h
