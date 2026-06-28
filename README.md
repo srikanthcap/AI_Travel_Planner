@@ -1,120 +1,231 @@
-# 🌍 SmartTrip AI
+# 🌍 AI Powered Travel Planner
 
-### AI-Powered Intelligent Travel Planning Platform
-
-SmartTrip AI is an AI-powered travel planning application that helps users create personalized travel itineraries based on their destination, budget, trip duration, and interests. The application integrates Artificial Intelligence, live weather information, budget estimation, tourist attractions, Google Maps, and PDF itinerary generation into a single platform.
+An AI-powered travel planning platform that generates personalized travel itineraries based on destination, budget, duration, and user interests. The application integrates Google Gemini AI, Weather APIs, Budget Analysis, Travel Recommendations, PDF Export, Trip History Tracking, and Analytics Dashboard into a single user-friendly platform.
 
 ---
 
-## 🚀 Features
+## 📌 Problem Statement
 
-- 🤖 AI-generated personalized travel itinerary
-- 🌤 Live weather information
-- 💰 Smart budget estimation
-- ✈ Travel planning assistance
-- 📍 Google Maps integration
-- 🏛 Famous tourist attractions
-- 🖼 Attraction images
-- 📄 Download itinerary as PDF
-- 📊 Travel analytics dashboard
-- 🗃 Trip history storage
+Planning a trip often requires users to search multiple platforms for weather updates, travel options, budget estimation, attractions, and local information.
+
+The objective of this project is to simplify travel planning by providing an intelligent platform that generates personalized travel itineraries while offering weather forecasts, budget analysis, travel insights, and downloadable travel reports.
 
 ---
 
-# 📷 Application Screenshots
+## 🛠️ Tech Stack
 
-## 🏠 Home Page
-
-![Home](screenshots/home.png)
-
----
-
-## 🌤 Weather & Budget Analysis
-
-![Weather](screenshots/weather_budget.png)
-
----
-
-## 🗺 AI Generated Itinerary
-
-![Itinerary](screenshots/itinerary.png)
+| Layer                | Technology        |
+| -------------------- | ----------------- |
+| Frontend             | Streamlit         |
+| AI Engine            | Google Gemini API |
+| Programming Language | Python            |
+| Database             | SQLite            |
+| Weather Service      | OpenWeather API   |
+| Data Processing      | Pandas            |
+| PDF Generation       | ReportLab         |
+| Version Control      | Git & GitHub      |
 
 ---
 
-## 📍 Famous Attractions
+## ✨ Features
 
-![Attractions](screenshots/attractions.png)
+### 🤖 AI Itinerary Generation
+
+* Personalized travel plans using Gemini AI
+* Day-wise itinerary recommendations
+* Tourist attraction suggestions
+* Local cuisine recommendations
+* Travel tips and guidance
+
+### 🌤 Real-Time Weather Forecast
+
+* Current temperature
+* Humidity levels
+* Wind speed
+* Weather conditions
+
+### ✈️ Travel Recommendations
+
+* Travel suggestions between locations
+* Estimated travel expenses
+* Transportation guidance
+
+### 💰 Budget Analysis
+
+* Travel cost estimation
+* Hotel cost estimation
+* Food expense calculation
+* Remaining budget analysis
+
+### 🗺️ Google Maps Integration
+
+* Direct destination navigation
+* Location visualization
+* Easy route access
+
+### 📄 PDF Export
+
+* Download itinerary as PDF
+* Travel summary report
+* Offline accessibility
+
+### 🗄️ Trip History Management
+
+* Save generated trips
+* SQLite database integration
+* Historical travel records
+
+### 📊 Analytics Dashboard
+
+* Total trips generated
+* Budget analytics
+* Destination insights
+* Travel statistics
 
 ---
 
-## 📊 Analytics Dashboard
-
-![Analytics](screenshots/analytics.png)
-
----
-
-# 🛠 Technology Stack
-
-| Technology | Purpose |
-|------------|---------|
-| Python | Backend |
-| Streamlit | User Interface |
-| Google Gemini AI | AI Itinerary Generation |
-| OpenWeather API | Live Weather |
-| Unsplash API | Attraction Images |
-| SQLite | Trip History |
-| ReportLab | PDF Generation |
-
----
-
-# 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 AI_Travel_Planner/
 │
 ├── api/
-│   ├── attractions_service.py
-│   ├── budget_service.py
 │   ├── gemini_service.py
-│   ├── hotel_service.py
-│   ├── pdf_service.py
-│   ├── place_image_service.py
+│   ├── weather_service.py
 │   ├── travel_service.py
-│   └── weather_service.py
+│   ├── budget_service.py
+│   └── pdf_service.py
 │
 ├── database/
+│   └── db.py
 │
-├── screenshots/
+├── data/
+│   └── travel_options.csv
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── .env
+├── .env
+└── travel.db
 ```
 
 ---
 
-# ⚙ Installation
+## 🚀 Project Development Phases
 
-Clone the repository
+### Phase 1 — Project Planning
+
+* Define objectives
+* Requirement analysis
+* Technology selection
+
+Status: ✅ Complete
+
+### Phase 2 — User Interface Development
+
+* Streamlit UI creation
+* User input forms
+* Layout design
+
+Status: ✅ Complete
+
+### Phase 3 — Gemini AI Integration
+
+* Gemini API configuration
+* Prompt engineering
+* Dynamic itinerary generation
+
+Status: ✅ Complete
+
+### Phase 4 — Weather API Integration
+
+* OpenWeather API integration
+* Live weather display
+
+Status: ✅ Complete
+
+### Phase 5 — Travel Recommendation Module
+
+* Travel suggestions
+* Transportation information
+* Estimated travel costs
+
+Status: ✅ Complete
+
+### Phase 6 — Budget Analysis
+
+* Expense estimation
+* Budget tracking
+* Cost breakdown
+
+Status: ✅ Complete
+
+### Phase 7 — Database Integration
+
+* SQLite database creation
+* Trip storage
+* Travel history management
+
+Status: ✅ Complete
+
+### Phase 8 — PDF Report Generation
+
+* PDF itinerary export
+* Download support
+
+Status: ✅ Complete
+
+### Phase 9 — Maps & Analytics
+
+* Google Maps integration
+* Travel analytics dashboard
+
+Status: ✅ Complete
+
+### Phase 10 — Deployment Preparation
+
+* GitHub repository management
+* Documentation
+* Deployment readiness
+
+Status: ✅ Complete
+
+---
+
+## 📊 Project Highlights
+
+* AI-Based Travel Planning
+* Personalized Recommendations
+* Real-Time Weather Updates
+* Budget Optimization
+* PDF Report Generation
+* SQLite Database Integration
+* Analytics Dashboard
+* Interactive User Interface
+
+---
+
+## 🚀 Installation
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/srikanthcap/AI_Travel_Planner.git
 ```
 
-Go to the project
+### Navigate to Project Folder
 
 ```bash
 cd AI_Travel_Planner
 ```
 
-Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### Run Application
 
 ```bash
 streamlit run app.py
@@ -122,56 +233,46 @@ streamlit run app.py
 
 ---
 
-# 🔑 Environment Variables
+## 📦 Requirements
 
-Create a `.env` file.
-
-```env
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-
-WEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
-
-UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_API_KEY
+```text
+streamlit
+google-generativeai
+python-dotenv
+requests
+pandas
+reportlab
 ```
 
 ---
 
-# 🤖 APIs Used
+## 📸 Application Modules
 
-- Google Gemini API
-- OpenWeather API
-- Unsplash API
-- Google Maps
-
----
-
-# 📄 PDF Export
-
-Users can download the complete travel itinerary as a professionally formatted PDF report.
+* Home Dashboard
+* Weather Information
+* Travel Recommendation Engine
+* Budget Analysis
+* AI Itinerary Generator
+* PDF Export
+* Trip History
+* Analytics Dashboard
 
 ---
 
-# 📈 Future Enhancements
+## 🔮 Future Enhancements
 
-- Hotel Booking
-- Flight Booking
-- Voice Assistant
-- User Authentication
-- Multi-language Support
-- Expense Tracker
-- AI Chat Assistant
+* Flight Booking Integration
+* Hotel Booking APIs
+* Multi-Language Support
+* User Authentication System
+* Mobile Application
+* AI Cost Optimization
+* Travel Recommendation Engine using Machine Learning
 
----
 
-# 👨‍💻 Author
+## ⭐ Support
 
-**Srikanth**
+If you found this project useful, consider giving it a star on GitHub.
 
-GitHub:
-https://github.com/srikanthcap
-
----
-
-# ⭐ If you like this project
-
-Please consider giving this repository a ⭐ on GitHub.
+⭐ Star the repository:
+https://github.com/srikanthcap/AI_Travel_Planner
