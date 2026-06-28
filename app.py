@@ -135,21 +135,9 @@ st.markdown("""
 st.markdown("""
 
 <div class="hero-box">
-    <div class="hero-heading">🌍 SmartTrip AI</div>
-
-    <div class="hero-sub">
-        AI-Powered Intelligent Travel Planning Platform
-    </div>
-
-    <p style="color:white;
-              font-size:20px;
-              margin-top:15px;
-              font-weight:500;">
-        ✈️ Plan Smarter • Travel Better • Explore More
-    </p>
-
+    <div class="hero-heading">🌍 AI Powered Travel Planner</div>
+    <div class="hero-sub">✈️ Plan Smarter, Travel Better</div>
 </div>
-
 """, unsafe_allow_html=True)
 
 c1,c2,c3,c4 = st.columns(4)
