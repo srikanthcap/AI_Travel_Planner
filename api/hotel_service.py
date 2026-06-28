@@ -1,16 +1,39 @@
-import pandas as pd
+import google.generativeai as genai
+import os
+import json
 
-def get_hotels(city):
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-    hotels = pd.read_csv("data/hotels.csv")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
-    hotels["city"] = hotels["city"].astype(str).str.strip().str.lower()
 
-    city = city.strip().lower()
+def get_hotels(destination):
 
-    # Exact match
-    result = hotels[
-        hotels["city"] == city
-    ]
+    prompt = f"""
+Return ONLY JSON.
 
-    return result
+Suggest 5 best hotels in {destination}.
+
+Format:
+
+[
+ {{
+   "name":"",
+   "rating":"",
+   "price":"",
+   "description":""
+ }}
+]
+
+No markdown.
+Only JSON.
+"""
+
+    response = model.generate_content(prompt)
+
+    text = response.text.replace("```json", "").replace("```", "").strip()
+
+    try:
+        return json.loads(text)
+    except:
+        return []
